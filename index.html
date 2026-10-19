@@ -12,7 +12,7 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form action="procesa.php" method="post">
+    <form action="procesa.php">
         <fieldset>
             <legend>Datos Personales</legend>
             <p>
@@ -21,8 +21,63 @@
             <p>
             <label for="">Apellido:</label><input type="text" id="nomb" name="Apellido">
             </p>
+        <p>
+            <label for="">Hombre</label>
+            <input type="radio" value="H" checked id="Hombre" name="genero">
+            <label for="">Mujer</label>
+            <input type="radio" value=" M" checked id="mujer" name="genero">
+        </p>
+        <p>
+            <label for="">Fumador</label>
+            <input type="checkbox" name="fuma" id="fumador">
+        </p>
         </fieldset>
-        <input type="submit" value="Enviar">
+        <P>
+            <label for="prov">provincia</label>
+            <select name="prov" id="prov">
+                <option value="cr">ciudad real</option>
+                <option value="av">albacete</option>
+                <option value="tl">toledo</option>
+                <option value="cn">cuenca</option>
+                <option value="gd ">guadalajara</option>
+            </select>
+            <p>
+            <label for="">Observaciones</label>
+            <textarea name="obs" cols="10" 
+            rows="6" id="obs">
+                escriba algo...
+            </textarea>
+            </p>
+            <p>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+            </p>
+              <p>
+                <label for="Fecha-nac">Fecha de nacimiento</label>
+                <input type="date" name="Fecha-nac" id="fecha-nac">
+            </p>
+             <p>
+                <label for="edad">Edad</label>
+                <input type="number" name="edad" id="edad"
+                min="0" max="25">
+            </p>
+               <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </p>
+               <p>
+                <label for="foto">Adjuntar foto</label>
+                <input type="file" name="foto" id="foto">
+            </p>
+
+            
+
+
+        </P>
+        <!--BOTONES REINICIO Y RESET-->
+         <input type="submit" value="Enviar">
+         <input type="reset" value="Reiniciar Formulario">
+
     </form>
     
 </body>
